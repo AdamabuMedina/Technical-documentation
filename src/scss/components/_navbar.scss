@@ -1,0 +1,39 @@
+.navbar {
+
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 23, 22, .4);
+
+  &__list {
+    height: 88%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__item {
+    color: var(--abbey-color);
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 30px;
+    color: var(--abbey-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: var(--black-color);
+    }
+  }
+}
