@@ -40,32 +40,22 @@
         <p>В данном руководстве предполагается, что вы имеете:</p>
         <ul class="main-section__list">
           <li>
-            <a
-              href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide"
-              class="main-section__link"
-              target="_blank"
-            >
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide" class="main-section__link"
+              target="_blank">
               Изучение Web
             </a>
             предоставляет информацию для начинающих и вводит в базовые концепции
             программирования и Internet.
           </li>
           <li>
-            <a
-              href="https://developer.mozilla.org/ru/docs/Learn"
-              class="main-section__link"
-              target="_blank"
-            >
+            <a href="https://developer.mozilla.org/ru/docs/Learn" class="main-section__link" target="_blank">
               Руководство по JavaScript
             </a>
             (данное руководство) предоставляет обзор JavaScript и его объектов.
           </li>
           <li>
-            <a
-              href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference"
-              class="main-section__link"
-              target="_blank"
-            >
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference" class="main-section__link"
+              target="_blank">
               Справочник по JavaScript
             </a>
             предоставляет подробную информацию по JavaScript.
@@ -124,7 +114,7 @@
         </p>
       </article>
     </section>
-    <section class="main-section" id="Hello_world">
+    <section class="main-section hero" id="Hello_world">
       <h2 class="main-section__title">Hello world</h2>
       <article class="main-section__article">
         <p>
@@ -147,11 +137,8 @@
         <p>
           Вы можете использовать переменные как символические имена для значений
           в вашем приложении. Имена переменных называются
-          <a
-            href="https://developer.mozilla.org/ru/docs/Glossary/Identifier"
-            class="main-section__link"
-            target="_blank"
-          >
+          <a href="https://developer.mozilla.org/ru/docs/Glossary/Identifier" class="main-section__link"
+            target="_blank">
             identifiers
           </a>
           и должны соответствовать определённым правилам.
@@ -166,12 +153,8 @@
         <p>
           Вы можете использовать в идентификаторах буквы ISO 8859-1 или Unicode,
           например, å или ü. Вы также можете использовать
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals"
-            class="main-section__link"
-            target="_blank"
-            >управляющие последовательности Unicode</a
-          >
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals"
+            class="main-section__link" target="_blank">управляющие последовательности Unicode</a>
           как символы в идентификаторах. Некоторые примеры корректных имён:
           Number_hits, temp99, and _name.
         </p>
@@ -192,22 +175,14 @@
           <code class="main-section__code"> x = 42. </code>
           Переменные, объявленные данным способом, являются глобальными. Такое
           объявление генерирует
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Strict_mode"
-            class="main-section__link"
-            target="_blank"
-          >
-            строгое предупреждение (strict mode)</a
-          >.&nbsp; Не рекомендуется использовать данный способ.
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Strict_mode"
+            class="main-section__link" target="_blank">
+            строгое предупреждение (strict mode)</a>.&nbsp; Не рекомендуется использовать данный способ.
         </p>
         <p>
           Используя ключевое слово
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
-            class="main-section__link"
-            target="_blank"
-            >let</a
-          >.&nbsp;Например,
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
+            class="main-section__link" target="_blank">let</a>.&nbsp;Например,
           <code class="main-section__code"> let y = 13. </code>
           Данный синтаксис может быть использован для объявления локальной
           переменной в области видимости блока.
@@ -226,18 +201,14 @@
         </p>
         <p>
           До ECMAScript 6 в JavaScript отсутствовала область видимости
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
-            class="main-section__link"
-            target="_blank"
-            >блока </a
-          >;&nbsp; переменная, объявленная внутри блока, является локальной для
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+            class="main-section__link" target="_blank">блока </a>;&nbsp; переменная, объявленная внутри блока, является
+          локальной для
           <strong><i>функции</i></strong> (или <i>глобальной</i> области
           видимости), внутри которой находится данный блок. Например, следующий
           код выведет значение 5, т.к. областью видимости переменной x является
           функция (или глобальный контекст), внутри которой объявлена переменная
-          x, а <strong><i>не блок</i></strong
-          >, которым в данном случае является оператор if:
+          x, а <strong><i>не блок</i></strong>, которым в данном случае является оператор if:
         </p>
         <code class="main-section__code">
           if (true) { var x = 5; } console.log(x); // 5
@@ -259,12 +230,8 @@
           Глобальные переменные на самом деле являются свойствами
           <i>глобального объекта</i>. На веб-страницах глобальным объектом
           является
-          <a
-            class="main-section__link"
-            href="https://developer.mozilla.org/ru/docs/Web/API/Window"
-            target="_blank"
-            >window</a
-          >,&nbsp; поэтому вы можете устанавливать глобальные переменные и
+          <a class="main-section__link" href="https://developer.mozilla.org/ru/docs/Web/API/Window"
+            target="_blank">window</a>,&nbsp; поэтому вы можете устанавливать глобальные переменные и
           обращаться к ним, используя синтаксис window.variable:
           <code class="main-section__code">window.foo = 'bar';</code>
         </p>
@@ -283,11 +250,8 @@
         <p>
           Вы можете создать именованную константу, доступную только для чтения,
           используя ключевое слово
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const"
-            class="main-section__linkk"
-            >const</a
-          >.&nbsp; Синтаксис идентификатора константы является таким же, как и у
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const"
+            class="main-section__linkk">const</a>.&nbsp; Синтаксис идентификатора константы является таким же, как и у
           идентификатора переменной: он должен начинаться с буквы, нижнего
           подчёркивания или знака $ и может содержать буквы, цифры или нижнее
           подчёркивание.
@@ -328,92 +292,52 @@
           <li>
             <p>
               Шесть типов данных, которые являются
-              <a
-                href="https://developer.mozilla.org/ru/docs/Glossary/Primitive"
-                target="_blank"
-                class="main-section__link"
-                >примитивами</a
-              >:&nbsp;
+              <a href="https://developer.mozilla.org/ru/docs/Glossary/Primitive" target="_blank"
+                class="main-section__link">примитивами</a>:&nbsp;
             </p>
             <ul>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/Boolean"
-                  target="_blank"
-                  class="main-section__link"
-                  >Boolean</a
-                >.&nbsp; true и false.
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Boolean" target="_blank"
+                  class="main-section__link">Boolean</a>.&nbsp; true и false.
               </li>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/Null"
-                  target="_blank"
-                  class="main-section__link"
-                  >null</a
-                >.&nbsp; Специальное ключевое слово, обозначающее нулевое или
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Null" target="_blank"
+                  class="main-section__link">null</a>.&nbsp; Специальное ключевое слово, обозначающее нулевое или
                 «пустое» значение. Поскольку JavaScript чувствителен к регистру,
                 null не то же самое, что Null, NULL или любой другой вариант.
               </li>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/undefined"
-                  target="_blank"
-                  class="main-section__link"
-                  >undefined</a
-                >.&nbsp; Свойство глобального объекта; переменная, не имеющая
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/undefined" target="_blank"
+                  class="main-section__link">undefined</a>.&nbsp; Свойство глобального объекта; переменная, не имеющая
                 присвоенного значения, обладает типом undefined.
               </li>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/Number"
-                  target="_blank"
-                  class="main-section__link"
-                  >Number</a
-                >.&nbsp; 42 или 3.14159.
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Number" target="_blank"
+                  class="main-section__link">Number</a>.&nbsp; 42 или 3.14159.
               </li>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/String"
-                  target="_blank"
-                  class="main-section__link"
-                  >String</a
-                >.&nbsp; "Howdy"
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/String" target="_blank"
+                  class="main-section__link">String</a>.&nbsp; "Howdy"
               </li>
               <li>
-                <a
-                  href="https://developer.mozilla.org/ru/docs/Glossary/Symbol"
-                  target="_blank"
-                  class="main-section__link"
-                  >Symbol</a
-                >&nbsp; (new in ECMAScript 2015). A data type whose instances
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Symbol" target="_blank"
+                  class="main-section__link">Symbol</a>&nbsp; (new in ECMAScript 2015). A data type whose instances
                 are unique and immutable.
               </li>
             </ul>
           </li>
           <li>
             и
-            <a
-              href="https://developer.mozilla.org/ru/docs/Glossary/Object"
-              target="_blank"
-              class="main-section__link"
-              >Object</a
-            >&nbsp;
+            <a href="https://developer.mozilla.org/ru/docs/Glossary/Object" target="_blank"
+              class="main-section__link">Object</a>&nbsp;
           </li>
         </ul>
         Хотя типов данных относительно немного, но они позволяют вам выполнять
         полезные функции в ваших приложениях.
-        <a
-          href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object"
-          target="_blank"
-          class="main-section__link"
-          >Objects</a
-        >&nbsp; и
-        <a
-          href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function"
-          target="_blank"
-          class="main-section__link"
-          >функции</a
-        >&nbsp; являются другими фундаментальными элементами языка. Вы можете
+        <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank"
+          class="main-section__link">Objects</a>&nbsp; и
+        <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"
+          class="main-section__link">функции</a>&nbsp; являются другими фундаментальными элементами языка. Вы можете
         думать об объектах как об именованных контейнерах для значений и о
         функциях как о процедурах, которые ваше приложение может исполнять.
       </article>
@@ -433,12 +357,9 @@
           Здесь condition может быть любым выражением, вычисляемым как истинное
           (true) или ложное (false). Чтобы получить более подробную информацию о
           значениях true и false, прочитайте
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description"
-            target="_blank"
-            class="main-section__link"
-            >Boolean</a
-          >.&nbsp;. Если условие оценивается как true, то выполняется
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description"
+            target="_blank" class="main-section__link">Boolean</a>.&nbsp;. Если условие оценивается как true, то
+          выполняется
           statement_1, в противном случае - statement_2. Блоки statement_1 и
           statement_2 могут быть любыми блоками, включая также вложенные
           инструкции if.
@@ -486,12 +407,8 @@
       <article class="main-section__article">
         <p>
           Цикл
-          <a
-            href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while"
-            target="_blank"
-            class="main-section__link"
-            >while</a
-          >
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while" target="_blank"
+            class="main-section__link">while</a>
           выполняет выражения пока условие истинно. Выглядит он так:
           <code class="main-section__code"> while (условие) выражения </code>
         </p>
@@ -512,68 +429,58 @@
         Пример 1
         <p>Следующий цикл while работает, пока n меньше трёх:</p>
         <code class="main-section__code">
-          var n = 0; var x = 0; while (n < 3) { n++; x += n; }
-        </code>
-        <p>
-          С каждой итерацией, цикл увеличивает n и добавляет это значение к x.
-          Поэтому, x и n получают следующие значения:
-        </p>
-        <ul>
-          <li>После первого прохода: n = 1 и x = 1</li>
-          <li>После второго: n = 2 and x = 3</li>
-          <li>После третьего прохода: n = 3 and x = 6</li>
-        </ul>
-        <p>
-          После третьего прохода, условие n < 3 становится ложным, поэтому цикл
-          прерывается.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Function_declarations">
-      <h2 class="main-section__title">
-        Функции вида "function declaration statement"
-      </h2>
-      <article class="main-section__article">
-        Объявление функции (function definition, или function declaration, или
-        function statement) состоит из ключевого слова
-        <a
-          href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function"
-          target="_blank"
-          class="main-section__link"
-          >function</a
-        >
-        и следующих частей:
-        <ol>
-          <li>Имя функции.</li>
-          <li>
-            Список параметров (принимаемых функцией) заключённых в круглые
-            скобки () и разделённых запятыми.
-          </li>
-          <li>
-            Инструкции, которые будут выполнены после вызова функции, заключают
-            в фигурные скобки { }.
-          </li>
-        </ol>
-        <p>
-          Например, следующий код объявляет простую функцию с именем square:
-        </p>
-        <code class="main-section__code">
-          function square(number) { return number * number; }
-        </code>
-        <p>
-          Функция square принимает один параметр, названный number. Состоит из
-          одной инструкции, которая означает вернуть параметр этой функции (это
-          number) умноженный на самого себя. Инструкция return указывает на
-          значение, которые будет возвращено функцией.
-        </p>
-        <code class="main-section__code"> return number * number; </code>
-        <p>
-          Примитивные параметры (например, число) передаются функции значением;
-          значение передаётся в функцию, но если функция меняет значение
-          параметра, это изменение не отразится глобально или после вызова
-          функции.
-        </p>
-      </article>
+          var n = 0; var x = 0; while (n < 3) { n++; x +=n; } </code> <p>
+            С каждой итерацией, цикл увеличивает n и добавляет это значение к x.
+            Поэтому, x и n получают следующие значения:
+            </p>
+            <ul>
+              <li>После первого прохода: n = 1 и x = 1</li>
+              <li>После второго: n = 2 and x = 3</li>
+              <li>После третьего прохода: n = 3 and x = 6</li>
+            </ul>
+            <p>
+              После третьего прохода, условие n < 3 становится ложным, поэтому цикл прерывается. </p> </article>
+                </section> <section class="main-section" id="Function_declarations">
+                <h2 class="main-section__title">
+                  Функции вида "function declaration statement"
+                </h2>
+                <article class="main-section__article">
+                  Объявление функции (function definition, или function declaration, или
+                  function statement) состоит из ключевого слова
+                  <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function"
+                    target="_blank" class="main-section__link">function</a>
+                  и следующих частей:
+                  <ol>
+                    <li>Имя функции.</li>
+                    <li>
+                      Список параметров (принимаемых функцией) заключённых в круглые
+                      скобки () и разделённых запятыми.
+                    </li>
+                    <li>
+                      Инструкции, которые будут выполнены после вызова функции, заключают
+                      в фигурные скобки { }.
+                    </li>
+                  </ol>
+                  <p>
+                    Например, следующий код объявляет простую функцию с именем square:
+                  </p>
+                  <code class="main-section__code">
+                    function square(number) { return number * number; }
+                  </code>
+                  <p>
+                    Функция square принимает один параметр, названный number. Состоит из
+                    одной инструкции, которая означает вернуть параметр этой функции (это
+                    number) умноженный на самого себя. Инструкция return указывает на
+                    значение, которые будет возвращено функцией.
+                  </p>
+                  <code class="main-section__code"> return number * number; </code>
+                  <p>
+                    Примитивные параметры (например, число) передаются функции значением;
+                    значение передаётся в функцию, но если функция меняет значение
+                    параметра, это изменение не отразится глобально или после вызова
+                    функции.
+                  </p>
+                </article>
     </section>
     <section class="main-section" id="Reference">
       <h2 class="main-section__title">Ссылки</h2>
@@ -581,12 +488,8 @@
         <ul>
           <li>
             Вся документация на этой странице взята из:
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-              target="_blank"
-              class="main-section__link"
-              >MDN</a
-            >
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank"
+              class="main-section__link">MDN</a>
           </li>
         </ul>
       </article>

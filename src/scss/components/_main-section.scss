@@ -3,6 +3,11 @@
   margin-left: 310px;
   padding: 20px;
   margin-bottom: 110px;
+
+  @include small-tablet {
+    margin-left: 0;
+    padding: 0;
+  }
 }
 
 .main-section {
@@ -13,16 +18,30 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
+
+    @include mobile {
+      margin: 10px 0;
+      text-align: center;
+    }
   }
 
   &__article {
     margin: 15px;
+
+    @include mobile {
+      margin: 10px;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 24px;
     color: var(--abbey-color);
+
+    @include mobile {
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
   li {
@@ -30,6 +49,10 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--abbey-color);
+
+    @include mobile {
+      margin-top: 5px 0 0 5px;
+    }
   }
 
   &__link {
@@ -52,5 +75,15 @@
     word-wrap: normal;
     background-color: #f7f7f7;
     border-radius: 5px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  @include small-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
