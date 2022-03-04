@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  @include('partials/head.html')
+@include('partials/head.html')
 
-  <body class="page__body">
-    <div class="site-container">
-      @include('partials/header.html')
-      <main class="main"></main>
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/navbar.html')
+    <!--  -->
+    @include('partials/main-section.html')
+    <!--  -->
+    @include('partials/footer.html')
+  </div>
+</body>
 
-      @include('partials/footer.html')
-      <!-- @include('html/h1.html') пример include -->
-    </div>
-  </body>
 </html>

@@ -16,9 +16,14 @@ html {
 
 .page__body {
   margin: 0;
-  min-width: 320px;
+  min-width: 290px;
   min-height: 100%;
   font-size: 16px;
+  line-height: 1.5;
+
+  @media (max-width: 320px) {
+    line-height: 1.2;
+  }
 }
 
 img {
@@ -36,7 +41,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
