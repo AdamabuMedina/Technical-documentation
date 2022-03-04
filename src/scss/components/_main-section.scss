@@ -87,3 +87,21 @@
     align-items: center;
   }
 }
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: var(--grenadier-color);
+  color: var(--light-color);
+  transition: background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: #852B05;
+  }
+}
